@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Start Your Project — Grizzly Apex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <a href="index.html" class="logo-mark">
+    <img src="assets/logo-black-transparent.png" alt="Grizzly Apex">
+  </a>
+  <nav class="links">
+    <a href="index.html#about" data-ar="من نحن" data-en="About" data-fr="À propos">About</a>
+    <a href="services.html" data-ar="خدماتنا" data-en="Services" data-fr="Services">Services</a>
+    <a href="index.html#process" data-ar="طريقة عملنا" data-en="Process" data-fr="Processus">Process</a>
+    <a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact" data-fr="Contact">Contact</a>
+    <a href="start-project.html" data-ar="اطلب موقعك" data-en="Start a project" data-fr="Démarrer un projet">Start a project</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">/</span>
+      <button data-lang="fr">FR</button>
+      <span class="sep">/</span>
+      <button data-lang="ar">AR</button>
+    </div>
+    <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="subhero">
+  <div class="grain"></div>
+  <svg class="claw-hero" viewBox="0 0 500 500">
+    <path d="M60 460 C120 340 160 220 130 60"/>
+    <path d="M140 470 C220 350 260 210 210 40"/>
+    <path d="M230 470 C300 360 330 220 280 50"/>
+  </svg>
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html" data-ar="الرئيسية" data-en="Home" data-fr="Accueil">Home</a>
+      <span>/</span>
+      <span data-ar="اطلب موقعك" data-en="Start a project" data-fr="Démarrer un projet">Start a project</span>
+    </div>
+    <h1 class="disp" data-ar="أخبرنا عن فكرتك" data-en="Tell us about your idea" data-fr="Parlez-nous de votre idée">Tell us about your idea</h1>
+    <p class="sub" data-ar="سجّل دخولك ثم شارك تفاصيل مشروعك — سنعود إليك في أقرب وقت." data-en="Sign in, then share your project details — we'll get back to you shortly." data-fr="Connectez-vous, puis partagez les détails de votre projet — nous vous répondrons rapidement.">
+      Sign in, then share your project details — we'll get back to you shortly.
+    </p>
+  </div>
+</section>
+
+<section style="padding:90px 0 130px;background:var(--off-white);">
+  <div class="wrap">
+
+    <div class="step-indicator">
+      <div class="step-dot active" id="dot1"></div>
+      <div class="step-dot" id="dot2"></div>
+    </div>
+
+    <!-- STEP 1: AUTH -->
+    <div id="authStep" class="auth-card reveal">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-mode="signin" data-ar="تسجيل الدخول" data-en="Sign in" data-fr="Connexion">Sign in</button>
+        <button class="auth-tab" data-mode="signup" data-ar="حساب جديد" data-en="Create account" data-fr="Créer un compte">Create account</button>
+      </div>
+
+      <button id="googleBtn" class="btn btn-google">
+        <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.6 2.4 30.1 0 24 0 14.6 0 6.4 5.4 2.5 13.2l7.9 6.1C12.3 13.1 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9h12.6c-.5 3-2.2 5.5-4.7 7.2l7.4 5.7C43.9 37.3 46.5 31.4 46.5 24.5z"/><path fill="#FBBC05" d="M10.4 19.3c-.5 1.5-.8 3.1-.8 4.7s.3 3.2.8 4.7l-7.9 6.1C.9 31.9 0 28 0 24s.9-7.9 2.5-10.8z"/><path fill="#34A853" d="M24 48c6.1 0 11.6-2 15.5-5.5l-7.4-5.7c-2.1 1.4-4.8 2.2-8.1 2.2-6.4 0-11.7-3.6-13.6-9.3l-7.9 6.1C6.4 42.6 14.6 48 24 48z"/></svg>
+        <span data-ar="متابعة عبر Google" data-en="Continue with Google" data-fr="Continuer avec Google">Continue with Google</span>
+      </button>
+
+      <div class="auth-divider"><span data-ar="أو" data-en="or" data-fr="ou">or</span></div>
+
+      <form id="emailForm">
+        <div class="field">
+          <label data-ar="البريد الإلكتروني" data-en="Email" data-fr="E-mail">Email</label>
+          <input type="email" id="emailInput" required autocomplete="email">
+        </div>
+        <div class="field">
+          <label data-ar="كلمة المرور" data-en="Password" data-fr="Mot de passe">Password</label>
+          <input type="password" id="passwordInput" required autocomplete="current-password" minlength="6">
+        </div>
+        <button type="submit" class="btn btn-solid btn-full" id="emailSubmitBtn">
+          <span data-ar="تسجيل الدخول" data-en="Sign in" data-fr="Connexion">Sign in</span>
+        </button>
+      </form>
+
+      <p id="authMsg" class="form-msg"></p>
+    </div>
+
+    <!-- STEP 2: PROJECT FORM -->
+    <div id="formStep" class="auth-card hidden reveal" style="max-width:600px;">
+      <div class="user-badge">
+        <span id="userEmailLabel"></span>
+        <button id="signOutBtn" data-ar="تسجيل الخروج" data-en="Sign out" data-fr="Se déconnecter">Sign out</button>
+      </div>
+
+      <form id="projectForm">
+        <div class="field">
+          <label data-ar="الاسم الكامل" data-en="Full name" data-fr="Nom complet">Full name</label>
+          <input type="text" id="nameInput" required>
+        </div>
+        <div class="field">
+          <label data-ar="فكرة مشروعك" data-en="Your project idea" data-fr="Votre idée de projet">Your project idea</label>
+          <textarea id="ideaInput" required placeholder=""></textarea>
+        </div>
+        <div class="field">
+          <label data-ar="الميزانية التقريبية (اختياري)" data-en="Approximate budget (optional)" data-fr="Budget approximatif (facultatif)">Approximate budget (optional)</label>
+          <select id="budgetInput">
+            <option value="" data-ar="اختر..." data-en="Select..." data-fr="Sélectionner...">Select...</option>
+            <option value="< 500 USD">&lt; 500 USD</option>
+            <option value="500 - 1500 USD">500 - 1500 USD</option>
+            <option value="1500 - 3000 USD">1500 - 3000 USD</option>
+            <option value="3000+ USD">3000+ USD</option>
+            <option value="not sure" data-ar="لست متأكداً" data-en="Not sure yet" data-fr="Pas encore sûr">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label data-ar="رقم الهاتف (اختياري)" data-en="Phone number (optional)" data-fr="Numéro de téléphone (facultatif)">Phone number (optional)</label>
+          <input type="tel" id="phoneInput">
+        </div>
+        <button type="submit" class="btn btn-solid btn-full" id="projectSubmitBtn">
+          <span data-ar="إرسال الطلب" data-en="Submit request" data-fr="Envoyer la demande">Submit request</span>
+        </button>
+      </form>
+
+      <p id="projectMsg" class="form-msg"></p>
+    </div>
+
+  </div>
+</section>
+
+<footer style="max-width:1180px;margin:0 auto;padding:0 32px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
+  <div class="logo-mark">
+    <img src="assets/logo-black-transparent.png" alt="Grizzly Apex" style="height:26px;">
+    <span class="logo-word" data-ar="غريزلي أبيكس" data-en="Grizzly Apex" data-fr="Grizzly Apex">Grizzly Apex</span>
+  </div>
+  <p style="font-size:12.5px;color:var(--gray-600);" data-ar="© 2026 Grizzly Apex. جميع الحقوق محفوظة." data-en="© 2026 Grizzly Apex. All rights reserved." data-fr="© 2026 Grizzly Apex. Tous droits réservés.">© 2026 Grizzly Apex. All rights reserved.</p>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
+  import {
+    getAuth, GoogleAuthProvider, signInWithPopup,
+    createUserWithEmailAndPassword, signInWithEmailAndPassword,
+    onAuthStateChanged, signOut
+  } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js";
+  import {
+    getFirestore, collection, addDoc, serverTimestamp
+  } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyBAevdHHlvFYQ_vzv7ewPo-sHxEDSYAxjQ",
+    authDomain: "grizzly-apex-1.firebaseapp.com",
+    projectId: "grizzly-apex-1",
+    storageBucket: "grizzly-apex-1.firebasestorage.app",
+    messagingSenderId: "604744217160",
+    appId: "1:604744217160:web:3602ac0c844e3d4fcc5e7d"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const googleProvider = new GoogleAuthProvider();
+
+  const authStep = document.getElementById('authStep');
+  const formStep = document.getElementById('formStep');
+  const dot1 = document.getElementById('dot1');
+  const dot2 = document.getElementById('dot2');
+  const authMsg = document.getElementById('authMsg');
+  const projectMsg = document.getElementById('projectMsg');
+  const userEmailLabel = document.getElementById('userEmailLabel');
+
+  function currentLang(){
+    return document.documentElement.getAttribute('lang') || 'en';
+  }
+
+  const T = {
+    fillAll: { en: "Please fill in your name and project idea.", ar: "الرجاء تعبئة الاسم وفكرة المشروع.", fr: "Veuillez remplir votre nom et votre idée de projet." },
+    sending: { en: "Sending...", ar: "جارٍ الإرسال...", fr: "Envoi en cours..." },
+    sent: { en: "Thank you! Your request has been sent. We'll be in touch soon.", ar: "شكراً لك! تم إرسال طلبك بنجاح. سنتواصل معك قريباً.", fr: "Merci ! Votre demande a été envoyée. Nous vous contacterons bientôt." },
+    sendError: { en: "Something went wrong. Please try again.", ar: "حدث خطأ ما. حاول مرة أخرى.", fr: "Une erreur s'est produite. Veuillez réessayer." },
+    authError: { en: "Something went wrong. Check your details and try again.", ar: "حدث خطأ. تحقق من بياناتك وحاول مرة أخرى.", fr: "Une erreur s'est produite. Vérifiez vos informations et réessayez." },
+    weakPassword: { en: "Password must be at least 6 characters.", ar: "يجب أن تكون كلمة المرور 6 أحرف على الأقل.", fr: "Le mot de passe doit contenir au moins 6 caractères." },
+    emailInUse: { en: "This email already has an account — try signing in instead.", ar: "هذا البريد مسجّل مسبقاً — جرّب تسجيل الدخول بدلاً من ذلك.", fr: "Cet e-mail possède déjà un compte — essayez de vous connecter." },
+    wrongCreds: { en: "Incorrect email or password.", ar: "البريد الإلكتروني أو كلمة المرور غير صحيحة.", fr: "E-mail ou mot de passe incorrect." },
+    signingIn: { en: "Sign in", ar: "تسجيل الدخول", fr: "Connexion" },
+    creatingAccount: { en: "Create account", ar: "حساب جديد", fr: "Créer un compte" },
+  };
+  function t(key){ const l = currentLang(); return (T[key] && (T[key][l] || T[key].en)) || ''; }
+
+  // ----- Auth tabs (sign in / sign up) -----
+  let authMode = 'signin';
+  document.querySelectorAll('.auth-tab').forEach(tab=>{
+    tab.addEventListener('click', ()=>{
+      document.querySelectorAll('.auth-tab').forEach(x=>x.classList.remove('active'));
+      tab.classList.add('active');
+      authMode = tab.dataset.mode;
+      document.querySelector('#emailSubmitBtn span').textContent =
+        authMode === 'signup' ? t('creatingAccount') : t('signingIn');
+      authMsg.textContent = '';
+    });
+  });
+
+  // ----- Google sign-in -----
+  document.getElementById('googleBtn').addEventListener('click', async ()=>{
+    authMsg.className = 'form-msg';
+    authMsg.textContent = '';
+    try {
+      await signInWithPopup(auth, googleProvider);
+    } catch(err){
+      authMsg.className = 'form-msg error';
+      authMsg.textContent = t('authError');
+    }
+  });
+
+  // ----- Email/password sign-in / sign-up -----
+  document.getElementById('emailForm').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    authMsg.className = 'form-msg';
+    authMsg.textContent = '';
+    const email = document.getElementById('emailInput').value.trim();
+    const password = document.getElementById('passwordInput').value;
+    try {
+      if (authMode === 'signup') {
+        await createUserWithEmailAndPassword(auth, email, password);
+      } else {
+        await signInWithEmailAndPassword(auth, email, password);
+      }
+    } catch(err){
+      authMsg.className = 'form-msg error';
+      const code = err.code || '';
+      if (code.includes('weak-password')) authMsg.textContent = t('weakPassword');
+      else if (code.includes('email-already-in-use')) authMsg.textContent = t('emailInUse');
+      else if (code.includes('invalid-credential') || code.includes('wrong-password') || code.includes('user-not-found')) authMsg.textContent = t('wrongCreds');
+      else authMsg.textContent = t('authError');
+    }
+  });
+
+  // ----- Auth state -----
+  onAuthStateChanged(auth, (user)=>{
+    if (user) {
+      authStep.classList.add('hidden');
+      formStep.classList.remove('hidden');
+      dot1.classList.remove('active');
+      dot2.classList.add('active');
+      userEmailLabel.textContent = user.email || user.displayName || '';
+    } else {
+      authStep.classList.remove('hidden');
+      formStep.classList.add('hidden');
+      dot1.classList.add('active');
+      dot2.classList.remove('active');
+    }
+  });
+
+  document.getElementById('signOutBtn').addEventListener('click', ()=> signOut(auth));
+
+  // ----- Project request submission -----
+  document.getElementById('projectForm').addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const name = document.getElementById('nameInput').value.trim();
+    const idea = document.getElementById('ideaInput').value.trim();
+    const budget = document.getElementById('budgetInput').value;
+    const phone = document.getElementById('phoneInput').value.trim();
+
+    if (!name || !idea) {
+      projectMsg.className = 'form-msg error';
+      projectMsg.textContent = t('fillAll');
+      return;
+    }
+
+    const btn = document.getElementById('projectSubmitBtn');
+    btn.disabled = true;
+    projectMsg.className = 'form-msg';
+    projectMsg.textContent = t('sending');
+
+    try {
+      await addDoc(collection(db, 'projectRequests'), {
+        uid: auth.currentUser.uid,
+        email: auth.currentUser.email || '',
+        name, idea, budget, phone,
+        createdAt: serverTimestamp()
+      });
+      projectMsg.className = 'form-msg success';
+      projectMsg.textContent = t('sent');
+      document.getElementById('projectForm').reset();
+    } catch(err){
+      projectMsg.className = 'form-msg error';
+      projectMsg.textContent = t('sendError');
+    } finally {
+      btn.disabled = false;
+    }
+  });
+</script>
+
+</body>
+</html>
