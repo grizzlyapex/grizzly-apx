@@ -1,335 +1,188 @@
-:root{
-    --black:#000000;
-    --white:#ffffff;
-    --off-white:#fafafa;
-    --gray-900:#111111;
-    --gray-700:#3a3a3a;
-    --gray-600:#6b6b6b;
-    --gray-300:#c9c9c9;
-    --gray-200:#e5e5e5;
-    --ease:cubic-bezier(.16,.8,.24,1);
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--off-white);
-    color:var(--black);
-    font-family:'IBM Plex Sans Arabic','Inter',sans-serif;
-    overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
-  }
-  html[dir="ltr"] body{ font-family:'Inter','IBM Plex Sans Arabic',sans-serif; }
-  .disp{ font-family:'IBM Plex Sans Arabic','Fraunces',serif; font-weight:700; }
-  html[dir="ltr"] .disp{ font-family:'Fraunces','IBM Plex Sans Arabic',serif; }
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Grizzly Apex</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-  a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  section{position:relative;}
-  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+<header id="header">
+  <a href="index.html" class="logo-mark">
+    <img src="assets/logo-black-transparent.png" alt="Grizzly Apex">
+  </a>
+  <nav class="links">
+    <a href="index.html#about" data-ar="من نحن" data-en="About" data-fr="À propos">About</a>
+    <a href="services.html" data-ar="خدماتنا" data-en="Services" data-fr="Services">Services</a>
+    <a href="index.html#process" data-ar="طريقة عملنا" data-en="Process" data-fr="Processus">Process</a>
+    <a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact" data-fr="Contact">Contact</a>
+    <a href="start-project.html" data-ar="اطلب موقعك" data-en="Start a project" data-fr="Démarrer un projet">Start a project</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">/</span>
+      <button data-lang="fr">FR</button>
+      <span class="sep">/</span>
+      <button data-lang="ar">AR</button>
+    </div>
+    <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+  </div>
+</header>
 
-  /* ===== NAV ===== */
-  header{
-    position:fixed;top:0;left:0;right:0;z-index:100;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 32px;
-    background:rgba(250,250,250,.72);
-    backdrop-filter:blur(10px);
-    border-bottom:1px solid transparent;
-    transition:border-color .3s var(--ease), background .3s var(--ease);
-  }
-  header.scrolled{border-color:var(--gray-200);}
-  .logo-mark{display:flex;align-items:center;gap:10px;}
-  .logo-mark img{height:34px;width:auto;}
-  .logo-word{font-size:14px;letter-spacing:.14em;font-weight:600;text-transform:uppercase;}
-  nav.links{display:flex;gap:36px;font-size:14px;}
-  nav.links a{position:relative;padding:4px 0;}
-  nav.links a::after{
-    content:"";position:absolute;bottom:0;left:0;right:0;height:1px;
-    background:var(--black);transform:scaleX(0);transform-origin:right;
-    transition:transform .35s var(--ease);
-  }
-  html[dir="ltr"] nav.links a::after{transform-origin:left;}
-  nav.links a:hover::after{transform:scaleX(1);}
-  .nav-right{display:flex;align-items:center;gap:22px;}
-  .lang-switch{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;letter-spacing:.03em;}
-  .lang-switch button{
-    background:none;border:none;padding:6px 3px;cursor:pointer;font:inherit;
-    color:var(--gray-600);transition:color .25s var(--ease);
-  }
-  .lang-switch button.active{color:var(--black);text-decoration:underline;text-underline-offset:5px;}
-  .lang-switch button:hover{color:var(--black);}
-  .lang-switch .sep{color:var(--gray-300);font-size:11px;}
-  .burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
-  .burger span{width:22px;height:1.5px;background:var(--black);}
+<section class="subhero">
+  <div class="grain"></div>
+  <svg class="claw-hero" viewBox="0 0 500 500">
+    <path d="M60 460 C120 340 160 220 130 60"/>
+    <path d="M140 470 C220 350 260 210 210 40"/>
+    <path d="M230 470 C300 360 330 220 280 50"/>
+  </svg>
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html" data-ar="الرئيسية" data-en="Home" data-fr="Accueil">Home</a>
+      <span>/</span>
+      <span data-ar="خدماتنا" data-en="Services" data-fr="Services">Services</span>
+    </div>
+    <h1 class="disp" data-ar="خدماتنا بالتفصيل" data-en="Our services, in detail" data-fr="Nos services, en détail">Our services, in detail</h1>
+    <p class="sub" data-ar="نركّز على خدمتين نتقنهما جيداً — تصميم وتطوير المواقع — بدل تشتيت الجهد على كل شيء." data-en="We focus on two things we do well — web design and web development — instead of spreading thin across everything." data-fr="Nous nous concentrons sur deux choses que nous maîtrisons — le design et le développement web — plutôt que de nous disperser.">We focus on two things we do well — web design and web development — instead of spreading thin across everything.</p>
+  </div>
+</section>
 
-  /* ===== HERO ===== */
-  .hero{
-    min-height:100vh;background:var(--black);color:var(--white);
-    display:flex;flex-direction:column;justify-content:center;
-    padding-top:100px;position:relative;overflow:hidden;
-  }
-  .grain{
-    position:absolute;inset:0;opacity:.05;pointer-events:none;
-    background-image:radial-gradient(circle,#fff 1px,transparent 1px);
-    background-size:3px 3px;
-  }
-  .claw-hero{
-    position:absolute;top:50%;right:-6%;transform:translateY(-50%);
-    width:640px;height:640px;opacity:.55;pointer-events:none;
-  }
-  html[dir="rtl"] .claw-hero{right:auto;left:-8%;transform:translateY(-50%) scaleX(-1);}
-  .claw-hero path{
-    fill:none;stroke:var(--white);stroke-width:1.4;
-    stroke-dasharray:900;stroke-dashoffset:900;
-    animation:drawClaw 2.6s var(--ease) forwards;
-  }
-  .claw-hero path:nth-child(2){animation-delay:.18s;}
-  .claw-hero path:nth-child(3){animation-delay:.36s;}
-  @keyframes drawClaw{to{stroke-dashoffset:0;}}
+<section class="service-detail">
+  <div class="wrap sd-grid reveal">
+    <div>
+      <span class="sd-num">01</span>
+      <h2 class="disp" data-ar="تطوير المواقع" data-en="Web Development" data-fr="Développement Web">Web Development</h2>
+      <p class="sd-desc" data-ar="نبني موقعك بكود نظيف وسريع، بدءاً من الموقع التعريفي البسيط إلى الأنظمة الأكثر تعقيداً، مع الحرص على الأداء والأمان في كل مرحلة." data-en="We build your site with clean, fast code — from a simple business site to more complex systems — with performance and security in mind at every stage." data-fr="Nous construisons votre site avec un code propre et rapide — d'un simple site vitrine à des systèmes plus complexes — en pensant performance et sécurité à chaque étape.">We build your site with clean, fast code — from a simple business site to more complex systems — with performance and security in mind at every stage.</p>
+    </div>
+    <ul class="feature-list">
+      <li data-ar="تصميم متجاوب يعمل على كل الأجهزة" data-en="Fully responsive across all devices" data-fr="Entièrement responsive sur tous les appareils">Fully responsive across all devices</li>
+      <li data-ar="كود نظيف وقابل للتوسّع مستقبلاً" data-en="Clean, scalable code for future growth" data-fr="Code propre et évolutif pour l'avenir">Clean, scalable code for future growth</li>
+      <li data-ar="سرعة تحميل عالية وأداء محسّن" data-en="Fast loading and optimized performance" data-fr="Chargement rapide et performance optimisée">Fast loading and optimized performance</li>
+      <li data-ar="ربط مع أنظمة إدارة المحتوى عند الحاجة" data-en="CMS integration when needed" data-fr="Intégration CMS si nécessaire">CMS integration when needed</li>
+      <li data-ar="دعم فني بعد الإطلاق" data-en="Technical support after launch" data-fr="Support technique après le lancement">Technical support after launch</li>
+    </ul>
+  </div>
+</section>
 
-  .eyebrow{
-    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
-    color:var(--gray-300);margin-bottom:22px;
-    opacity:0;transform:translateY(10px);
-    animation:riseIn .7s var(--ease) forwards;animation-delay:.15s;
-  }
-  .hero h1{
-    font-size:clamp(38px,6.2vw,86px);line-height:1.06;letter-spacing:-.01em;
-    max-width:900px;
-    opacity:0;transform:translateY(18px);
-    animation:riseIn .8s var(--ease) forwards;animation-delay:.3s;
-  }
-  .hero h1 em{font-style:normal;color:var(--gray-300);}
-  .hero p.sub{
-    margin-top:26px;max-width:520px;font-size:17px;line-height:1.7;color:var(--gray-300);
-    opacity:0;transform:translateY(14px);
-    animation:riseIn .8s var(--ease) forwards;animation-delay:.5s;
-  }
-  .hero-cta{
-    margin-top:40px;display:flex;gap:16px;flex-wrap:wrap;
-    opacity:0;transform:translateY(14px);
-    animation:riseIn .8s var(--ease) forwards;animation-delay:.68s;
-  }
-  @keyframes riseIn{to{opacity:1;transform:translateY(0);}}
+<section class="service-detail">
+  <div class="wrap sd-grid reveal">
+    <div>
+      <span class="sd-num">02</span>
+      <h2 class="disp" data-ar="تصميم المواقع" data-en="Web Design" data-fr="Conception Web">Web Design</h2>
+      <p class="sd-desc" data-ar="نصمم هوية بصرية وتجربة استخدام مبنية خصيصاً لعلامتك، بحيث يشعر كل زائر أنه في المكان الصحيح من أول ثانية." data-en="We design a visual identity and user experience built specifically for your brand, so every visitor feels at home from the first second." data-fr="Nous concevons une identité visuelle et une expérience utilisateur pensées pour votre marque, afin que chaque visiteur se sente chez lui dès la première seconde.">We design a visual identity and user experience built specifically for your brand, so every visitor feels at home from the first second.</p>
+    </div>
+    <ul class="feature-list">
+      <li data-ar="هوية بصرية متكاملة (ألوان، خطوط، أسلوب)" data-en="Complete visual identity (colors, type, style)" data-fr="Identité visuelle complète (couleurs, typographie, style)">Complete visual identity (colors, type, style)</li>
+      <li data-ar="تصميم واجهات مدروس (UI)" data-en="Thoughtful interface design (UI)" data-fr="Conception d'interface soignée (UI)">Thoughtful interface design (UI)</li>
+      <li data-ar="تجربة مستخدم سلسة وسهلة (UX)" data-en="Smooth, intuitive user experience (UX)" data-fr="Expérience utilisateur fluide et intuitive (UX)">Smooth, intuitive user experience (UX)</li>
+      <li data-ar="نماذج تفاعلية قبل مرحلة البرمجة" data-en="Interactive prototypes before development" data-fr="Prototypes interactifs avant le développement">Interactive prototypes before development</li>
+      <li data-ar="تصميم يراعي الموبايل أولاً" data-en="Mobile-first design approach" data-fr="Approche de conception mobile-first">Mobile-first design approach</li>
+    </ul>
+  </div>
+</section>
 
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;
-    padding:15px 30px;border-radius:999px;font-size:14px;font-weight:600;
-    letter-spacing:.02em;cursor:pointer;border:1px solid currentColor;
-    transition:transform .3s var(--ease), background .3s var(--ease), color .3s var(--ease);
-  }
-  .btn-solid{background:var(--white);color:var(--black);}
-  .btn-solid:hover{transform:translateY(-2px);}
-  .btn-ghost{background:transparent;color:var(--white);}
-  .btn-ghost:hover{background:var(--white);color:var(--black);}
-  .btn svg{width:16px;height:16px;transition:transform .3s var(--ease);}
-  html[dir="rtl"] .btn svg{transform:scaleX(-1);}
-  .btn:hover svg{transform:translateX(3px);}
-  html[dir="rtl"] .btn:hover svg{transform:scaleX(-1) translateX(3px);}
+<section class="mini-process">
+  <div class="wrap">
+    <div class="kicker reveal" data-ar="كيف نعمل" data-en="How we work" data-fr="Notre méthode">How we work</div>
+    <h2 class="disp reveal" data-ar="نفس الجودة، في كل مشروع" data-en="Same quality, on every project" data-fr="La même qualité, à chaque projet">Same quality, on every project</h2>
+    <div class="steps reveal-stagger reveal">
+      <div class="step r-item">
+        <div class="step-num">01</div>
+        <h4 data-ar="الاكتشاف" data-en="Discover" data-fr="Découverte">Discover</h4>
+        <p data-ar="نفهم مشروعك وأهدافك قبل أي خطوة." data-en="We understand your project and goals first." data-fr="Nous comprenons d'abord votre projet et vos objectifs.">We understand your project and goals first.</p>
+      </div>
+      <div class="step r-item">
+        <div class="step-num">02</div>
+        <h4 data-ar="التصميم" data-en="Design" data-fr="Design">Design</h4>
+        <p data-ar="نصمم واجهة تعكس هويتك بدقة." data-en="We design an interface that reflects your identity." data-fr="Nous concevons une interface qui reflète votre identité.">We design an interface that reflects your identity.</p>
+      </div>
+      <div class="step r-item">
+        <div class="step-num">03</div>
+        <h4 data-ar="البرمجة" data-en="Build" data-fr="Développement">Build</h4>
+        <p data-ar="نحوّل التصميم إلى موقع يعمل فعلياً." data-en="We turn the design into a working site." data-fr="Nous transformons le design en un site fonctionnel.">We turn the design into a working site.</p>
+      </div>
+      <div class="step r-item">
+        <div class="step-num">04</div>
+        <h4 data-ar="الإطلاق" data-en="Launch" data-fr="Lancement">Launch</h4>
+        <p data-ar="ننشر الموقع ونتابع أداءه بعدها." data-en="We launch and support the site afterward." data-fr="Nous lançons le site et l'accompagnons ensuite.">We launch and support the site afterward.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  .scroll-cue{
-    position:absolute;bottom:34px;left:32px;display:flex;align-items:center;gap:10px;
-    font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gray-600);
-  }
-  html[dir="rtl"] .scroll-cue{left:auto;right:32px;}
-  .scroll-cue .line{width:1px;height:34px;background:var(--gray-600);overflow:hidden;position:relative;}
-  .scroll-cue .line::after{
-    content:"";position:absolute;top:0;left:0;right:0;height:40%;background:var(--white);
-    animation:cue 1.8s ease-in-out infinite;
-  }
-  @keyframes cue{0%{top:-40%;}100%{top:100%;}}
+<section class="faq">
+  <div class="wrap">
+    <div class="kicker reveal" data-ar="أسئلة شائعة" data-en="FAQ" data-fr="FAQ">FAQ</div>
+    <h2 class="disp reveal" data-ar="أسئلة قد تدور في ذهنك" data-en="Questions you might have" data-fr="Questions fréquentes">Questions you might have</h2>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="كم يستغرق تنفيذ الموقع؟" data-en="How long does a website take?" data-fr="Combien de temps prend un site web ?">How long does a website take?</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a"><p data-ar="يعتمد ذلك على حجم المشروع ومتطلباته. بعد مرحلة الاكتشاف، نعطيك جدولاً زمنياً واضحاً قبل البدء." data-en="It depends on the project's size and requirements. After the Discovery phase, we give you a clear timeline before starting." data-fr="Cela dépend de la taille et des besoins du projet. Après la phase de découverte, nous vous donnons un calendrier clair avant de commencer.">It depends on the project's size and requirements. After the Discovery phase, we give you a clear timeline before starting.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="هل تقدمون صيانة بعد الإطلاق؟" data-en="Do you offer support after launch?" data-fr="Proposez-vous un support après le lancement ?">Do you offer support after launch?</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a"><p data-ar="نعم، نقدّم دعماً فنياً ومتابعة لأداء الموقع بعد إطلاقه مباشرة." data-en="Yes, we provide technical support and follow up on your site's performance right after launch." data-fr="Oui, nous fournissons un support technique et suivons les performances de votre site dès son lancement.">Yes, we provide technical support and follow up on your site's performance right after launch.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="هل يمكنكم إعادة تصميم موقع قائم؟" data-en="Can you redesign an existing website?" data-fr="Pouvez-vous refondre un site existant ?">Can you redesign an existing website?</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a"><p data-ar="بالتأكيد. نراجع موقعك الحالي ونقترح تحسينات في التصميم والأداء وتجربة الاستخدام." data-en="Absolutely. We review your current site and propose improvements to its design, performance, and user experience." data-fr="Absolument. Nous étudions votre site actuel et proposons des améliorations de design, de performance et d'expérience utilisateur.">Absolutely. We review your current site and propose improvements to its design, performance, and user experience.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  /* ===== reveal on scroll ===== */
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
-  .reveal.in{opacity:1;transform:translateY(0);}
-  .reveal-stagger.in .r-item:nth-child(1){transition-delay:.03s;}
-  .reveal-stagger.in .r-item:nth-child(2){transition-delay:.12s;}
-  .reveal-stagger.in .r-item:nth-child(3){transition-delay:.21s;}
-  .reveal-stagger.in .r-item:nth-child(4){transition-delay:.3s;}
-  .r-item{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
-  .reveal-stagger.in .r-item{opacity:1;transform:translateY(0);}
+<section class="contact" id="contact" style="padding-top:100px;">
+  <div class="grain"></div>
+  <div class="wrap contact-inner">
+    <h2 class="disp reveal" data-ar="جاهز تبدأ مشروعك؟" data-en="Ready to start your project?" data-fr="Prêt à démarrer votre projet ?">Ready to start your project?</h2>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="info-block">
+          <span data-ar="البريد الإلكتروني" data-en="Email" data-fr="E-mail">Email</span>
+          <a href="mailto:grizzlyapex01@gmail.com">grizzlyapex01@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <span data-ar="الهاتف" data-en="Phone" data-fr="Téléphone">Phone</span>
+          <a href="tel:+213551294060">+213 551 294 060</a>
+        </div>
+      </div>
+      <a href="mailto:grizzlyapex01@gmail.com" class="btn btn-solid">
+        <span data-ar="راسلنا الآن" data-en="Email us now" data-fr="Écrivez-nous">Email us now</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <footer>
+      <div class="logo-mark">
+        <img src="assets/logo-white-transparent.png" alt="Grizzly Apex" style="height:26px;">
+        <span class="logo-word" data-ar="غريزلي أبيكس" data-en="Grizzly Apex" data-fr="Grizzly Apex">Grizzly Apex</span>
+      </div>
+      <div class="social-row">
+        <a href="https://instagram.com/grizzlyapex" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="mailto:grizzlyapex01@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+      </div>
+      <p data-ar="© 2026 Grizzly Apex. جميع الحقوق محفوظة." data-en="© 2026 Grizzly Apex. All rights reserved." data-fr="© 2026 Grizzly Apex. Tous droits réservés.">© 2026 Grizzly Apex. All rights reserved.</p>
+    </footer>
+  </div>
+</section>
 
-  /* ===== ABOUT ===== */
-  .about{padding:150px 0 130px;background:var(--off-white);}
-  .about-grid{display:block;max-width:720px;}
-  .kicker{
-    font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--gray-600);
-    display:flex;align-items:center;gap:12px;margin-bottom:20px;
-  }
-  .kicker::before{content:"";width:24px;height:1px;background:var(--black);}
-  .about h2{font-size:clamp(30px,4vw,48px);line-height:1.18;margin-bottom:24px;}
-  .about p{font-size:16.5px;line-height:1.85;color:var(--gray-700);max-width:480px;}
-  .stats-row{display:flex;gap:56px;margin-top:44px;flex-wrap:wrap;}
-  .stat b{display:block;font-size:34px;font-weight:700;}
-  .stat span{font-size:12.5px;color:var(--gray-600);letter-spacing:.04em;}
-
-  /* ===== SERVICES ===== */
-  .services{padding:120px 0;background:var(--black);color:var(--white);}
-  .services .kicker{color:var(--gray-300);}
-  .services .kicker::before{background:var(--white);}
-  .services h2{font-size:clamp(30px,4vw,48px);max-width:640px;line-height:1.2;margin-bottom:70px;}
-  .service-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--gray-700);}
-  .service-card{
-    background:var(--black);padding:52px 44px;position:relative;overflow:hidden;
-    transition:background .4s var(--ease);
-  }
-  .service-card:hover{background:#0a0a0a;}
-  .service-num{font-size:12px;color:var(--gray-600);letter-spacing:.1em;margin-bottom:26px;display:block;}
-  .service-card h3{font-size:26px;margin-bottom:16px;}
-  .service-card p{color:var(--gray-300);font-size:15px;line-height:1.75;max-width:360px;}
-  .claw-hover{
-    position:absolute;bottom:-40px;inset-inline-end:-40px;width:220px;height:220px;opacity:0;
-    transition:opacity .5s var(--ease), transform .5s var(--ease);
-    transform:scale(.85) rotate(0deg);
-  }
-  .service-card:hover .claw-hover{opacity:.9;transform:scale(1) rotate(-6deg);}
-  .claw-hover path{fill:none;stroke:var(--white);stroke-width:1.3;}
-
-  /* ===== PROCESS ===== */
-  .process{padding:130px 0;background:var(--off-white);}
-  .process h2{font-size:clamp(30px,4vw,48px);margin-bottom:70px;max-width:600px;line-height:1.2;}
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--gray-200);}
-  .step{padding:34px 26px 0;border-inline-start:1px solid var(--gray-200);position:relative;}
-  .step:first-child{border-inline-start:none;padding-inline-start:0;}
-  .step-num{font-size:13px;color:var(--gray-600);font-weight:600;letter-spacing:.05em;}
-  .step h4{font-size:19px;margin:16px 0 10px;}
-  .step p{font-size:14px;color:var(--gray-600);line-height:1.7;}
-
-  /* ===== CONTACT ===== */
-  .contact{padding:150px 0 90px;background:var(--black);color:var(--white);position:relative;overflow:hidden;}
-  .contact .claw-hero{opacity:.35;}
-  .contact-inner{position:relative;z-index:2;}
-  .contact h2{font-size:clamp(34px,5.6vw,68px);line-height:1.08;max-width:760px;margin-bottom:50px;}
-  .contact-grid{display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-end;}
-  .contact-info{display:flex;gap:64px;flex-wrap:wrap;}
-  .info-block span{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gray-600);margin-bottom:10px;}
-  .info-block a, .info-block p{font-size:17px;font-weight:500;}
-  .info-block a{border-bottom:1px solid transparent;transition:border-color .3s var(--ease);}
-  .info-block a:hover{border-color:var(--white);}
-
-  footer{
-    margin-top:110px;padding-top:26px;border-top:1px solid var(--gray-700);
-    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;
-  }
-  footer p{font-size:12.5px;color:var(--gray-600);}
-  footer .logo-word{font-size:12px;}
-
-
-  @media (max-width:860px){
-    nav.links{display:none;}
-    .burger{display:flex;}
-    .service-grid{grid-template-columns:1fr;}
-    .steps{grid-template-columns:1fr;}
-    .step{border-inline-start:none;border-top:1px solid var(--gray-200);padding-top:28px;}
-    .step:first-child{border-top:none;padding-top:0;}
-    .contact-info{gap:36px;}
-    .claw-hero{opacity:.25;width:420px;height:420px;}
-  }
-  @media (prefers-reduced-motion: reduce){
-    *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
-  }
-
-  /* ===== SCROLL PROGRESS ===== */
-  .scroll-progress{
-    position:fixed;top:0;left:0;right:0;height:3px;z-index:200;
-    background:var(--white);mix-blend-mode:difference;
-    transform-origin:left;transform:scaleX(0);
-    transition:transform .1s linear;
-  }
-  html[dir="rtl"] .scroll-progress{transform-origin:right;}
-
-  /* ===== CUSTOM CURSOR ===== */
-  @media (pointer:fine){
-    body.has-cursor, body.has-cursor a, body.has-cursor button{cursor:none;}
-    .cursor-dot, .cursor-ring{
-      position:fixed;top:0;left:0;z-index:300;pointer-events:none;
-      border-radius:50%;transform:translate(-50%,-50%);
-    }
-    .cursor-dot{width:6px;height:6px;background:var(--white);mix-blend-mode:difference;}
-    .cursor-ring{
-      width:34px;height:34px;border:1px solid var(--white);mix-blend-mode:difference;
-      transition:width .25s var(--ease), height .25s var(--ease), opacity .25s var(--ease);
-    }
-    .cursor-ring.hover{width:64px;height:64px;}
-    .cursor-claw{
-      position:fixed;top:0;left:0;z-index:300;pointer-events:none;width:40px;height:40px;
-      transform:translate(-50%,-50%) scale(.5) rotate(-12deg);opacity:0;
-      transition:opacity .25s var(--ease), transform .25s var(--ease);
-      mix-blend-mode:difference;
-    }
-    .cursor-claw.hover{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(-12deg);}
-    .cursor-claw path{fill:none;stroke:var(--white);stroke-width:1.4;}
-  }
-  @media (pointer:coarse){ .cursor-dot,.cursor-ring,.cursor-claw{display:none;} }
-
-  /* ===== SUB-HERO (inner pages) ===== */
-  .subhero{
-    background:var(--black);color:var(--white);padding:150px 0 90px;position:relative;overflow:hidden;
-  }
-  .breadcrumb{font-size:12.5px;color:var(--gray-300);letter-spacing:.05em;margin-bottom:22px;display:flex;gap:8px;align-items:center;}
-  .breadcrumb a{border-bottom:1px solid transparent;transition:border-color .3s var(--ease);}
-  .breadcrumb a:hover{border-color:var(--gray-300);}
-  .subhero h1{font-size:clamp(34px,5.4vw,64px);line-height:1.1;max-width:760px;}
-  .subhero p.sub{margin-top:22px;max-width:520px;font-size:16.5px;line-height:1.75;color:var(--gray-300);}
-
-  /* ===== SERVICE DETAIL ===== */
-  .service-detail{padding:110px 0;background:var(--off-white);border-top:1px solid var(--gray-200);}
-  .service-detail:nth-child(even){background:var(--white);}
-  .sd-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;}
-  .sd-num{font-size:13px;color:var(--gray-600);letter-spacing:.1em;margin-bottom:18px;display:block;}
-  .sd-grid h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:20px;line-height:1.18;}
-  .sd-grid p.sd-desc{font-size:16px;line-height:1.85;color:var(--gray-700);max-width:480px;margin-bottom:0;}
-  .feature-list{list-style:none;display:flex;flex-direction:column;gap:0;border-top:1px solid var(--gray-200);}
-  .feature-list li{
-    padding:20px 0;border-bottom:1px solid var(--gray-200);
-    display:flex;align-items:center;gap:16px;font-size:15.5px;
-  }
-  .feature-list li::before{content:"";width:18px;height:1px;background:var(--black);flex:none;}
-
-  /* ===== MINI PROCESS STRIP ===== */
-  .mini-process{padding:100px 0;background:var(--black);color:var(--white);}
-  .mini-process .kicker{color:var(--gray-300);}
-  .mini-process .kicker::before{background:var(--white);}
-  .mini-process h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:56px;max-width:600px;}
-
-  /* ===== FAQ ACCORDION ===== */
-  .faq{padding:120px 0;background:var(--off-white);}
-  .faq h2{font-size:clamp(28px,3.6vw,42px);margin-bottom:50px;}
-  .faq-list{border-top:1px solid var(--gray-200);max-width:820px;}
-  .faq-item{border-bottom:1px solid var(--gray-200);}
-  .faq-q{
-    display:flex;align-items:center;justify-content:space-between;gap:20px;
-    padding:26px 0;cursor:pointer;background:none;border:none;width:100%;
-    text-align:inherit;font-size:17px;font-weight:600;color:var(--black);font-family:inherit;
-  }
-  .faq-plus{
-    width:22px;height:22px;flex:none;position:relative;
-  }
-  .faq-plus::before,.faq-plus::after{
-    content:"";position:absolute;top:50%;left:50%;background:var(--black);
-    transform:translate(-50%,-50%);transition:transform .35s var(--ease), opacity .35s var(--ease);
-  }
-  .faq-plus::before{width:14px;height:1.4px;}
-  .faq-plus::after{width:1.4px;height:14px;}
-  .faq-item.open .faq-plus::after{transform:translate(-50%,-50%) rotate(90deg);opacity:0;}
-  .faq-a{
-    max-height:0;overflow:hidden;transition:max-height .4s var(--ease);
-  }
-  .faq-a p{padding:0 0 26px;font-size:15px;line-height:1.8;color:var(--gray-600);max-width:640px;}
-
-  /* ===== SOCIAL ROW ===== */
-  .social-row{display:flex;gap:18px;margin-top:6px;}
-  .social-row a{
-    width:38px;height:38px;border:1px solid var(--gray-700);border-radius:50%;
-    display:flex;align-items:center;justify-content:center;
-    transition:background .3s var(--ease), border-color .3s var(--ease);
-  }
-  .social-row a:hover{background:var(--white);border-color:var(--white);}
-  .social-row a:hover svg{stroke:var(--black);}
-  .social-row svg{width:17px;height:17px;stroke:var(--white);fill:none;stroke-width:1.5;transition:stroke .3s var(--ease);}
-  footer .social-row a{width:32px;height:32px;}
-  footer .social-row svg{width:14px;height:14px;}
-
-  @media (max-width:860px){
-    .sd-grid{grid-template-columns:1fr;gap:34px;}
-  }
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
