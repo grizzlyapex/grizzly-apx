@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Start Your Project — Grizzly Apex</title>
+<title>Start Your Project — Endling</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+ 
 <header id="header">
   <a href="index.html" class="logo-mark">
-    <img src="assets/logo-black-transparent.png" alt="Grizzly Apex">
+    <img src="assets/logo-black-transparent.png" alt="Endling">
   </a>
   <nav class="links">
     <a href="index.html#about" data-ar="من نحن" data-en="About" data-fr="À propos">About</a>
@@ -33,7 +33,7 @@
     <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
   </div>
 </header>
-
+ 
 <section class="subhero">
   <div class="grain"></div>
   <svg class="claw-hero" viewBox="0 0 500 500">
@@ -53,29 +53,29 @@
     </p>
   </div>
 </section>
-
+ 
 <section style="padding:90px 0 130px;background:var(--off-white);">
   <div class="wrap">
-
+ 
     <div class="step-indicator">
       <div class="step-dot active" id="dot1"></div>
       <div class="step-dot" id="dot2"></div>
     </div>
-
+ 
     <!-- STEP 1: AUTH -->
     <div id="authStep" class="auth-card reveal">
       <div class="auth-tabs">
         <button class="auth-tab active" data-mode="signin" data-ar="تسجيل الدخول" data-en="Sign in" data-fr="Connexion">Sign in</button>
         <button class="auth-tab" data-mode="signup" data-ar="حساب جديد" data-en="Create account" data-fr="Créer un compte">Create account</button>
       </div>
-
+ 
       <button id="googleBtn" class="btn btn-google">
         <svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.6 2.4 30.1 0 24 0 14.6 0 6.4 5.4 2.5 13.2l7.9 6.1C12.3 13.1 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.2-.4-4.7H24v9h12.6c-.5 3-2.2 5.5-4.7 7.2l7.4 5.7C43.9 37.3 46.5 31.4 46.5 24.5z"/><path fill="#FBBC05" d="M10.4 19.3c-.5 1.5-.8 3.1-.8 4.7s.3 3.2.8 4.7l-7.9 6.1C.9 31.9 0 28 0 24s.9-7.9 2.5-10.8z"/><path fill="#34A853" d="M24 48c6.1 0 11.6-2 15.5-5.5l-7.4-5.7c-2.1 1.4-4.8 2.2-8.1 2.2-6.4 0-11.7-3.6-13.6-9.3l-7.9 6.1C6.4 42.6 14.6 48 24 48z"/></svg>
         <span data-ar="متابعة عبر Google" data-en="Continue with Google" data-fr="Continuer avec Google">Continue with Google</span>
       </button>
-
+ 
       <div class="auth-divider"><span data-ar="أو" data-en="or" data-fr="ou">or</span></div>
-
+ 
       <form id="emailForm">
         <div class="field">
           <label data-ar="البريد الإلكتروني" data-en="Email" data-fr="E-mail">Email</label>
@@ -89,17 +89,17 @@
           <span data-ar="تسجيل الدخول" data-en="Sign in" data-fr="Connexion">Sign in</span>
         </button>
       </form>
-
+ 
       <p id="authMsg" class="form-msg"></p>
     </div>
-
+ 
     <!-- STEP 2: PROJECT FORM -->
     <div id="formStep" class="auth-card hidden reveal" style="max-width:600px;">
       <div class="user-badge">
         <span id="userEmailLabel"></span>
         <button id="signOutBtn" data-ar="تسجيل الخروج" data-en="Sign out" data-fr="Se déconnecter">Sign out</button>
       </div>
-
+ 
       <form id="projectForm">
         <div class="field">
           <label data-ar="الاسم الكامل" data-en="Full name" data-fr="Nom complet">Full name</label>
@@ -130,7 +130,7 @@
               <option value="+974">🇶🇦 +974</option>
               <option value="+965">🇰🇼 +965</option>
             </select>
-            <input type="tel" id="phoneInput" style="flex:1;" placeholder="555 55 55 55">
+            <input type="tel" id="phoneInput" style="flex:1;" placeholder="555 12 34 56">
           </div>
           <p style="font-size:12px;color:var(--gray-600);margin-top:8px;" data-ar="اختر مفتاح دولتك، واكتب الرقم بدون الصفر الأول (مثال: 555123456)" data-en="Choose your country code, and enter the number without the leading zero (e.g. 555123456)" data-fr="Choisissez l'indicatif de votre pays et saisissez le numéro sans le zéro initial (ex. 555123456)">Choose your country code, and enter the number without the leading zero (e.g. 555123456)</p>
         </div>
@@ -138,23 +138,23 @@
           <span data-ar="إرسال الطلب" data-en="Submit request" data-fr="Envoyer la demande">Submit request</span>
         </button>
       </form>
-
+ 
       <p id="projectMsg" class="form-msg"></p>
     </div>
-
+ 
   </div>
 </section>
-
+ 
 <footer style="max-width:1180px;margin:0 auto;padding:0 32px 60px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
   <div class="logo-mark">
-    <img src="assets/logo-black-transparent.png" alt="Grizzly Apex" style="height:26px;">
-    <span class="logo-word" data-ar="غريزلي أبيكس" data-en="Grizzly Apex" data-fr="Grizzly Apex">Grizzly Apex</span>
+    <img src="assets/logo-black-transparent.png" alt="Endling" style="height:26px;">
+    <span class="logo-word" data-ar="Endling" data-en="Endling" data-fr="Endling">Endling</span>
   </div>
-  <p style="font-size:12.5px;color:var(--gray-600);" data-ar="© 2026 Grizzly Apex. جميع الحقوق محفوظة." data-en="© 2026 Grizzly Apex. All rights reserved." data-fr="© 2026 Grizzly Apex. Tous droits réservés.">© 2026 Grizzly Apex. All rights reserved.</p>
+  <p style="font-size:12.5px;color:var(--gray-600);" data-ar="© 2026 Endling. جميع الحقوق محفوظة." data-en="© 2026 Endling. All rights reserved." data-fr="© 2026 Endling. Tous droits réservés.">© 2026 Endling. All rights reserved.</p>
 </footer>
-
+ 
 <script src="assets/js/main.js" defer></script>
-
+ 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-app.js";
   import {
@@ -165,7 +165,7 @@
   import {
     getFirestore, collection, addDoc, serverTimestamp
   } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-firestore.js";
-
+ 
   const firebaseConfig = {
     apiKey: "AIzaSyBAevdHHlvFYQ_vzv7ewPo-sHxEDSYAxjQ",
     authDomain: "grizzly-apex-1.firebaseapp.com",
@@ -174,12 +174,12 @@
     messagingSenderId: "604744217160",
     appId: "1:604744217160:web:3602ac0c844e3d4fcc5e7d"
   };
-
+ 
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
   const db = getFirestore(app);
   const googleProvider = new GoogleAuthProvider();
-
+ 
   const authStep = document.getElementById('authStep');
   const formStep = document.getElementById('formStep');
   const dot1 = document.getElementById('dot1');
@@ -187,11 +187,11 @@
   const authMsg = document.getElementById('authMsg');
   const projectMsg = document.getElementById('projectMsg');
   const userEmailLabel = document.getElementById('userEmailLabel');
-
+ 
   function currentLang(){
     return document.documentElement.getAttribute('lang') || 'en';
   }
-
+ 
   const T = {
     fillAll: { en: "Please fill in your name and project idea.", ar: "الرجاء تعبئة الاسم وفكرة المشروع.", fr: "Veuillez remplir votre nom et votre idée de projet." },
     sending: { en: "Sending...", ar: "جارٍ الإرسال...", fr: "Envoi en cours..." },
@@ -205,7 +205,7 @@
     creatingAccount: { en: "Create account", ar: "حساب جديد", fr: "Créer un compte" },
   };
   function t(key){ const l = currentLang(); return (T[key] && (T[key][l] || T[key].en)) || ''; }
-
+ 
   // ----- Auth tabs (sign in / sign up) -----
   let authMode = 'signin';
   document.querySelectorAll('.auth-tab').forEach(tab=>{
@@ -218,7 +218,7 @@
       authMsg.textContent = '';
     });
   });
-
+ 
   // ----- Google sign-in -----
   document.getElementById('googleBtn').addEventListener('click', async ()=>{
     authMsg.className = 'form-msg';
@@ -230,7 +230,7 @@
       authMsg.textContent = t('authError');
     }
   });
-
+ 
   // ----- Email/password sign-in / sign-up -----
   document.getElementById('emailForm').addEventListener('submit', async (e)=>{
     e.preventDefault();
@@ -253,7 +253,7 @@
       else authMsg.textContent = t('authError');
     }
   });
-
+ 
   // ----- Auth state -----
   onAuthStateChanged(auth, (user)=>{
     if (user) {
@@ -269,9 +269,9 @@
       dot2.classList.remove('active');
     }
   });
-
+ 
   document.getElementById('signOutBtn').addEventListener('click', ()=> signOut(auth));
-
+ 
   // ----- Project request submission -----
   document.getElementById('projectForm').addEventListener('submit', async (e)=>{
     e.preventDefault();
@@ -280,18 +280,18 @@
     const countryCode = document.getElementById('countryCodeInput').value;
     const phoneRaw = document.getElementById('phoneInput').value.trim();
     const phone = phoneRaw ? `${countryCode} ${phoneRaw}` : '';
-
+ 
     if (!name || !idea) {
       projectMsg.className = 'form-msg error';
       projectMsg.textContent = t('fillAll');
       return;
     }
-
+ 
     const btn = document.getElementById('projectSubmitBtn');
     btn.disabled = true;
     projectMsg.className = 'form-msg';
     projectMsg.textContent = t('sending');
-
+ 
     try {
       await addDoc(collection(db, 'projectRequests'), {
         uid: auth.currentUser.uid,
@@ -310,6 +310,7 @@
     }
   });
 </script>
-
+ 
 </body>
 </html>
+ 
