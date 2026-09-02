@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Help Center — Endling</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header id="header">
+  <a href="index.html" class="logo-mark">
+    <img src="assets/logo-black-transparent.png" alt="Endling">
+  </a>
+  <nav class="links">
+    <a href="index.html#about" data-ar="من نحن" data-en="About" data-fr="À propos">About</a>
+    <a href="services.html" data-ar="خدماتنا" data-en="Services" data-fr="Services">Services</a>
+    <a href="index.html#process" data-ar="طريقة عملنا" data-en="Process" data-fr="Processus">Process</a>
+    <a href="index.html#contact" data-ar="تواصل معنا" data-en="Contact" data-fr="Contact">Contact</a>
+    <a href="start-project.html" data-ar="اطلب موقعك" data-en="Start a project" data-fr="Démarrer un projet">Start a project</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch" id="langSwitch">
+      <button data-lang="en" class="active">EN</button>
+      <span class="sep">/</span>
+      <button data-lang="fr">FR</button>
+      <span class="sep">/</span>
+      <button data-lang="ar">AR</button>
+    </div>
+    <button class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="subhero">
+  <div class="grain"></div>
+  <svg class="claw-hero" viewBox="0 0 500 500">
+    <path d="M60 460 C120 340 160 220 130 60"/>
+    <path d="M140 470 C220 350 260 210 210 40"/>
+    <path d="M230 470 C300 360 330 220 280 50"/>
+  </svg>
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="index.html" data-ar="الرئيسية" data-en="Home" data-fr="Accueil">Home</a>
+      <span>/</span>
+      <span data-ar="مركز المساعدة" data-en="Help Center" data-fr="Centre d'aide">Help Center</span>
+    </div>
+    <h1 class="disp" data-ar="مركز المساعدة" data-en="Help Center" data-fr="Centre d'aide">Help Center</h1>
+    <p class="sub" data-ar="واجهت مشكلة أثناء تصفح الموقع أو إرسال نموذج؟ جرّب الحلول أدناه قبل التواصل معنا." data-en="Running into an issue loading the site or submitting a form? Try the steps below before reaching out." data-fr="Un problème pour charger le site ou envoyer un formulaire ? Essayez les étapes ci-dessous avant de nous contacter.">
+      Running into an issue loading the site or submitting a form? Try the steps below before reaching out.
+    </p>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div class="kicker reveal" data-ar="المشكلة الأكثر شيوعاً" data-en="Most common issue" data-fr="Problème le plus courant">Most common issue</div>
+    <h2 class="disp reveal" data-ar="الموقع لا يظهر بشكل صحيح" data-en="The site looks broken or won't load" data-fr="Le site s'affiche mal ou ne se charge pas">The site looks broken or won't load</h2>
+    <div class="faq-list reveal">
+
+      <div class="faq-item open">
+        <button class="faq-q">
+          <span data-ar="الصفحة تظهر بدون تصميم (بيضاء وبدون ألوان)" data-en="The page appears unstyled (plain white, no design)" data-fr="La page s'affiche sans mise en forme (blanche, sans design)">The page appears unstyled (plain white, no design)</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a" style="max-height:400px;">
+          <p data-ar="هذا غالباً بسبب نسخة قديمة محفوظة في متصفحك (كاش). جرّب: (1) افتح الموقع بوضع التصفح الخفي/الخاص (Incognito)، أو (2) اعمل تحديث قسري بالضغط على Ctrl+Shift+R (ويندوز) أو Cmd+Shift+R (ماك)، أو (3) امسح ذاكرة التخزين المؤقت للمتصفح من الإعدادات." data-en="This is usually caused by an old cached version in your browser. Try: (1) opening the site in Incognito/Private mode, (2) a hard refresh with Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac), or (3) clearing your browser's cache from settings." data-fr="Cela vient généralement d'une ancienne version mise en cache par votre navigateur. Essayez : (1) ouvrir le site en navigation privée, (2) forcer l'actualisation avec Ctrl+Maj+R (Windows) ou Cmd+Maj+R (Mac), ou (3) vider le cache de votre navigateur.">This is usually caused by an old cached version in your browser. Try: (1) opening the site in Incognito/Private mode, (2) a hard refresh with Ctrl+Shift+R (Windows) or Cmd+Shift+R (Mac), or (3) clearing your browser's cache from settings.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="الموقع لا يفتح إطلاقاً أو يظهر خطأ 404" data-en="The site won't open at all, or shows a 404 error" data-fr="Le site ne s'ouvre pas du tout, ou affiche une erreur 404">The site won't open at all, or shows a 404 error</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a">
+          <p data-ar="تأكد من كتابة الرابط كاملاً وبشكل صحيح. تحقق أيضاً من اتصالك بالإنترنت، وجرّب فتح الموقع من متصفح آخر أو من جهاز آخر للتأكد إذا كانت المشكلة عامة أو خاصة بجهازك." data-en="Make sure the link is typed in full and correctly. Also check your internet connection, and try opening the site from a different browser or device to see if the issue is general or specific to your device." data-fr="Vérifiez que le lien est saisi en entier et correctement. Vérifiez aussi votre connexion internet, et essayez d'ouvrir le site depuis un autre navigateur ou appareil pour voir si le problème est général ou propre à votre appareil.">Make sure the link is typed in full and correctly. Also check your internet connection, and try opening the site from a different browser or device to see if the issue is general or specific to your device.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="لا أستطيع تسجيل الدخول في صفحة طلب المشروع" data-en="I can't sign in on the Start a Project page" data-fr="Je n'arrive pas à me connecter sur la page « Démarrer un projet »">I can't sign in on the Start a Project page</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a">
+          <p data-ar="تأكد من كتابة البريد الإلكتروني وكلمة المرور بشكل صحيح. إذا كنت تسجل لأول مرة، اختر تبويب 'حساب جديد' بدل 'تسجيل الدخول'. يمكنك أيضاً تجربة تسجيل الدخول عبر Google بدل الإيميل." data-en="Make sure your email and password are entered correctly. If it's your first time, select the 'Create account' tab instead of 'Sign in'. You can also try signing in with Google instead of email." data-fr="Vérifiez que votre e-mail et votre mot de passe sont correctement saisis. Si c'est votre première visite, choisissez l'onglet « Créer un compte » plutôt que « Connexion ». Vous pouvez aussi essayer de vous connecter avec Google plutôt qu'avec un e-mail.">Make sure your email and password are entered correctly. If it's your first time, select the 'Create account' tab instead of 'Sign in'. You can also try signing in with Google instead of email.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="النموذج لا يرسل عند الضغط على 'إرسال الطلب'" data-en="The form won't submit when I click 'Submit request'" data-fr="Le formulaire ne s'envoie pas quand je clique sur « Envoyer la demande »">The form won't submit when I click 'Submit request'</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a">
+          <p data-ar="تأكد من تعبئة الحقول المطلوبة (الاسم وفكرة المشروع). تحقق من اتصالك بالإنترنت، وحاول تحديث الصفحة ثم إعادة تسجيل الدخول وتعبئة النموذج من جديد." data-en="Make sure the required fields (name and project idea) are filled in. Check your internet connection, and try refreshing the page, then sign in again and fill the form once more." data-fr="Vérifiez que les champs requis (nom et idée de projet) sont remplis. Vérifiez votre connexion internet, puis essayez d'actualiser la page, de vous reconnecter et de remplir à nouveau le formulaire.">Make sure the required fields (name and project idea) are filled in. Check your internet connection, and try refreshing the page, then sign in again and fill the form once more.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          <span data-ar="لا يزال لدي مشكلة، ماذا أفعل؟" data-en="I'm still stuck — what should I do?" data-fr="Le problème persiste, que faire ?">I'm still stuck — what should I do?</span>
+          <span class="faq-plus"></span>
+        </button>
+        <div class="faq-a">
+          <p data-ar="تواصل معنا مباشرة وسنساعدك في أسرع وقت — عبر البريد الإلكتروني، الهاتف، أو انستغرام. راجع بيانات التواصل في أسفل هذه الصفحة." data-en="Reach out to us directly and we'll help you as soon as possible — by email, phone, or Instagram. See the contact details at the bottom of this page." data-fr="Contactez-nous directement et nous vous aiderons dès que possible — par e-mail, téléphone ou Instagram. Voir les coordonnées en bas de cette page.">Reach out to us directly and we'll help you as soon as possible — by email, phone, or Instagram. See the contact details at the bottom of this page.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" style="padding-top:100px;">
+  <div class="grain"></div>
+  <div class="wrap contact-inner">
+    <h2 class="disp reveal" data-ar="لا تزال بحاجة لمساعدة؟" data-en="Still need a hand?" data-fr="Besoin d'aide supplémentaire ?">Still need a hand?</h2>
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <div class="info-block">
+          <span data-ar="البريد الإلكتروني" data-en="Email" data-fr="E-mail">Email</span>
+          <a href="mailto:contact.endling@gmail.com">contact.endling@gmail.com</a>
+        </div>
+        <div class="info-block">
+          <span data-ar="الهاتف" data-en="Phone" data-fr="Téléphone">Phone</span>
+          <a href="tel:+213551294060">+213 551 294 060</a>
+        </div>
+        <div class="info-block">
+          <span data-ar="انستغرام" data-en="Instagram" data-fr="Instagram">Instagram</span>
+          <a href="https://www.instagram.com/endlliing/" target="_blank" rel="noopener">@endlliing</a>
+        </div>
+      </div>
+      <a href="mailto:contact.endling@gmail.com" class="btn btn-solid">
+        <span data-ar="راسلنا الآن" data-en="Email us now" data-fr="Écrivez-nous">Email us now</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <footer>
+      <div class="logo-mark">
+        <img src="assets/logo-white-transparent.png" alt="Endling" style="height:26px;">
+        <span class="logo-word" data-ar="Endling" data-en="Endling" data-fr="Endling">Endling</span>
+      </div>
+      <div class="social-row">
+        <a href="https://www.instagram.com/endlliing/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="mailto:contact.endling@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        </a>
+      </div>
+      <p data-ar="© 2026 Endling. جميع الحقوق محفوظة." data-en="© 2026 Endling. All rights reserved." data-fr="© 2026 Endling. Tous droits réservés.">© 2026 Endling. All rights reserved.</p>
+    </footer>
+  </div>
+</section>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
